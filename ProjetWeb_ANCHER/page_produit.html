@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Sneakers Shop</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="simplegrid.css">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" title="Sneakers Shop"><img class="logo" src="images/logosnkrs.jpg" alt="LogoSneakers"/></a>
+            <form id="recherche" method="post">
+                <input class="search" name="saisie" type="text" placeholder="Sneakers" required />
+                <a href="recherche.html"><img src="http://www.larevuedekenza.fr/wp-content/themes/quarter/images/sidebar/loupe.png" alt="loupe"></a>     
+            </form>
+        </header>
+        <main>
+                <nav class="navig">
+                    <label for="menu-mobile" class="menu-mobile">Menu</label>
+                    <input type="checkbox" id="menu-mobile" role="button">
+                    <ul>
+                        <li class="promo"><a href="Promotions.html">Promotions</a></li>
+                        <li class="snkhomme"><a href="SnkHomme.html">Sneakers homme</a></li>
+                        <li class="snkfemme"><a href="SnkFemme.html">Sneakers femme</a></li>
+                    </ul>
+                </nav>
+                <div class="grid">
+                    <div class="col-1-2">
+                        <img class="image" src="images/huarache1.jpg" alt="Huarache"/>
+                    </div>
+                    <div class="col-1-2">
+                        <p class="titre">NIKE HUARACHE EDGE</p>
+                        <p class="prixpromo">119,00 €</p>
+                        <p class="prixvente">99,00 €</p>
+                        <p>Référence :  BQ5206-100 Nike Sportswear réintreprète cette saison l’emblématique Nike 
+                            Huarache dessinée à l’époque par le célèbre designer Tinker Hatfield. Cette nouvelle 
+                            version s’intitule EDGE et dispose d’un look plus moderne tout en gardant ses origines 
+                            avec son empeigne qui s’enfile comme un chausson. La tige est constituée d’un revêtement 
+                            en néoprène, de parties en mesh et en cuir suédé. Le logo Huarache est affublé sur la 
+                            languette. La sneaker affiche une association de blanc, de vert, d’orange et de noir 
+                            sur les renforts du talon. Cette Nike Huarache Edge Txt QS White/Clear Emerald est 
+                            une nouveauté de la collection Holiday 2018.</p>
+                            <div class="ajoutpanier">
+                                <a href="achat.html">Ajouter au panier</a>			
+                            </div>
+                    </div>
+                    <div class="grid">
+                    <div class="col-4-1">
+                            <img class="subimages" src="images/huarache2.jpg" alt="Huarache"/>
+                            <img class="subimages" src="images/huarache3.jpg" alt="Huarache"/>
+                            <img class="subimages" src="images/huarache4.jpg" alt="Huarache"/>
+                            <img class="subimages" src="images/huarache5.jpg" alt="Huarache"/>
+                    </div>
+                    </div>
+                </div>
+                <div class="grid">
+                     <div class="col-1-2">
+                         <p>Livraison gratuite</p>
+                        <p>Paiement sécurisé</p>
+                     </div>
+                     <div class="col-1-2">
+                        <p>Service Client</p>
+                        <p>Retour</p>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <p>2018 . Ancher</p>
+        </footer>
+    </body>
+</html>

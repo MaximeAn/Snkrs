@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Sneakers Shop</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="simplegrid.css">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" title="Sneakers Shop"><img class="logo" src="images/logosnkrs.jpg" alt="LogoSneakers"/></a>
+            <form id="recherche" method="post">
+                <input class="search" name="saisie" type="text" placeholder="Sneakers" required />
+                <a href="recherche.html"><img src="http://www.larevuedekenza.fr/wp-content/themes/quarter/images/sidebar/loupe.png" alt="loupe"></a>     
+            </form>
+        </header>
+        <main>
+            <nav class="navig">
+                <label for="menu-mobile" class="menu-mobile">Menu</label>
+                <input type="checkbox" id="menu-mobile" role="button">
+                <ul>
+                    <li class="promo"><a href="Promotions.html">Promotions</a></li>
+                    <li class="snkhomme"><a href="SnkHomme.html">Sneakers homme</a></li>
+                    <li class="snkfemme"><a href="SnkFemme.html">Sneakers femme</a></li>
+                </ul>
+            </nav>
+            <div class="grid">
+                <h3>Sélectionner un moyen de paiement</h3>
+                <form method="get" action="achat.html">
+                    <input type="checkbox" id="cartebleu" name="cartebleu">
+                    <label for="cartebleu"><img class="paye" src="images/cb.jpg" alt="carte Bleue"/></label>
+                    
+                    <input type="checkbox" id="visa" name="visa">
+                    <label for="visa"><img class="paye"  src="images/visa.jpg" alt="Visa"/></label>
+                    
+                    <input type="checkbox" id="mastercard" name="mastercard">
+                    <label for="mastercard"><img class="paye" src="images/mastercard.jpg" alt="Master Card"/></label>
+                    <div class="col-1-1">
+                        <label for="numero">Numéro de la carte</label>
+                        <div class="col-1-1">
+                            <input type="text" id="numero" name="NumCarte">
+                        </div>
+                    </div>
+                    <div class="col-1-1">
+                        <label for="titulaire">Titulaire de la carte</label>
+                        <div class="col-1-1">
+                            <input type="text" id="titulaire" name="Titulaire">
+                        </div>
+                    </div>
+                    <div class="col-1-1">
+                        <label for="date">Date d'expiration</label>
+                        <div class="col-1-1">
+                            <input type="month" id="date" name="Date" min="2018-12" value="2019-01">
+                        </div>
+                    </div>
+                    <div class="col-1-1">
+                        <label for="crypto">Cryptogramme</label>
+                        <div class="col-1-1">
+                            <input type="text" id="crypto" name="crypto">
+                        </div>
+                    </div>
+                    <div class="col-1-1">
+                        <input type="submit" value="Valider">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>2018 . Ancher</p>
+        </footer>   
+    </body>        
+</html>                
